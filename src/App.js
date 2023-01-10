@@ -22,40 +22,44 @@ function App() {
   };
 
   const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-      return task;
-    }));
-  }
+    setTasks((tasks) =>
+      tasks.map((task) =>
+        task.id === id ? { ...task, done: !task.done }
+          : task
+      ));
+  };
 
   const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({
-      ...task,
-      done: true,
-    })));
-  }
+    setTasks((tasks) =>
+      tasks.map((task) => ({
+        ...task,
+        done: true,
+      }))
+    );
+  };
 
   const addNewTask = (content) => {
     setTasks(tasks => [
       ...tasks,
-       {
+      {
         content,
         done: false,
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
-       },
-      ]);
+      },
+    ]);
   };
 
   return (
-    <Container>
+    <Container className="container">
       <Header title="Lista zadań" />
-      <Section title="Dodaj nowe zadanie" body={<Form addNewTask={addNewTask} />} />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form addNewTask={addNewTask} />} />
       <Section
         title="Lista zadań"
         body={
-          <List tasks={tasks}
+          <List
+            tasks={tasks}
             hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
