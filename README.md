@@ -1,3 +1,18 @@
+# Todo-List-React
+![tasks](https://user-images.githubusercontent.com/25402008/212052701-bbcc41e7-9170-4cc9-8ca9-3fc045277c27.gif)
+
+## Demo
+
+## Description
+This app will help you remember the most important things to do.
+
+## Used Technologies
+- HTML
+- CSS
+- JavaSctipt
+- Git
+- React
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
