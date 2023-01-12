@@ -7,6 +7,10 @@ https://mileni67.github.io/todo-list-react/
 ## Description
 This app will help you remember the most important things to do.
 
+## Updates
+- 2 buttons (1- all done. 2- hide finished, show finished)
+
+
 ## Used Technologies
 - HTML
 - CSS
