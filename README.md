@@ -2,7 +2,7 @@
 ![tasks](https://user-images.githubusercontent.com/25402008/212052701-bbcc41e7-9170-4cc9-8ca9-3fc045277c27.gif)
 
 ## Demo
-[To do List](mileni67.github.io/todo-list-react/)
+(mileni67.github.io/todo-list-react/)
 
 ## Description
 This app will help you remember the most important things to do.
