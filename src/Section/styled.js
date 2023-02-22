@@ -1,11 +1,16 @@
-.section {
+import styled from "styled-components";
+
+export const StyledSection = styled.section`
     background-color: #fff;
     margin: 10px 0;
     box-shadow: 0 0 5px #ddd;
-}
+`;
 
+export const ListName = styled.h2`
+    margin: 0;
+`;
 
-.section__header {
+export const Header = styled.header`
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
@@ -14,14 +19,10 @@
     padding: 20px;
     margin: 0;
     text-align: center;
-}
 
-.section__body {
-    padding: 20px;
-}
-
-@media (max-width: 767px) {
-    .section__header {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+
+`;
+
